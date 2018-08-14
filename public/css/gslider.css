@@ -1,0 +1,180 @@
+/*---------------------------------------------------------------
+6. Header
+---------------------------------------------------------------*/
+
+#header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	text-align: right;
+	padding: 30px 30px 0px 30px;
+	color: #fff;
+	z-index: 5;
+	background: #212121;
+	border-right: 5px solid #222;
+	border-right: 5px solid rgba(255,255,255,.1);
+	width: 190px;
+	opacity:0.7;
+}
+#header nav div{
+margin-bottom:10px;}
+/*---------------------------------------------------------------
+7. Slider
+---------------------------------------------------------------*/
+#thumb_wrapper img {
+    width: 100px;
+    height: 100px;
+}
+
+#superbgimage {
+	display: none;
+	background: #222 url('images/ajax-loader.gif') center center no-repeat;
+	position:relative;
+}
+#superbgimage img {
+	image-rendering: optimizeQuality;
+	-ms-interpolation-mode: bicubic;
+}
+
+#slideshow_nav_controls {
+position: absolute;
+bottom: 0px;
+background: #191919;
+display: block;
+width: 100%;
+padding: 20px 4px 15px 4px;
+border-top: 5px solid #777;
+border-top: 5px solid rgba(255,255,255,0.05);
+}
+
+#slideshow_nav_controls ul {
+	padding:0px 20px;
+}
+#slideshow_nav_controls ul li {
+	display: inline-block;
+	float: left;
+	margin-right: 2px;
+	cursor: pointer;
+}
+
+#slideshow_nav_controls ul li.backward_button {
+	width: 22px;
+	height: 28px;
+	background: url(/Mo3taz/public/img/gslider/buttons_sprite.png) no-repeat -29px 0px ;
+}
+
+#slideshow_nav_controls ul li.forward_button {
+	width: 21px;
+	height: 28px;
+	background: url(/Mo3taz/public/img/gslider/buttons_sprite.png) no-repeat -82px 0px;
+	margin-left: 1px;
+}
+
+#slideshow_nav_controls ul li.play_stop_button {
+	width: 27px;
+	height: 28px;
+	background: url(/Mo3taz/public/img/gslider/buttons_sprite.png) no-repeat -53px 0px;
+}
+
+#thumb_vert_mousemove {
+	overflow: hidden;
+	width: 114px;
+	height: 100%;
+	position: relative;
+}
+
+#thumb_vert_mousemove a {
+	position: absolute;
+	top: 0px;
+}
+
+
+#thumb_mousemove {
+	overflow: hidden;
+	width: 508px;
+	height: 60px;
+	position: relative;
+}
+
+#thumb_mousemove a {
+	display: inline;
+	position: absolute;
+	float: left;
+}
+
+#thumbs, #thumbs_hide {
+	text-align: center;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: #1a1b1d;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background: #222;	
+	z-index: 4;
+	border-right: 5px solid rgba(255,255,255,0.07);
+	width:130px;
+}
+
+#thumbs_hide {
+	display: none;
+}
+
+#thumbs a, #thumbs_hide a {
+	display: block;
+	background: none;
+	margin: 7px 7px -4px 7px;
+}
+
+#thumbs a img, #thumbs_hide a img, #floating_slideshow_nav a img {
+	opacity: 0.2;		
+}
+
+#thumbs a.activeslide img, #thumbs a.activeslide img, #floating_slideshow_nav a.activeslide img { opacity: 1; }
+
+#thumbs_move {
+
+position: absolute;
+bottom: 0px;
+width: 100%;
+display: block;
+background: #1a1b1d;
+
+}
+
+#thumbs_move ul li {
+
+display: inline;
+float: left;
+
+}
+
+#thumbs_move ul li a {
+	width: 20px;
+	display: block;
+	padding: 12px 8px 16px 8px;
+	color: #444;
+	font-size: 10px;
+}
+
+/*---------------------------------------------------------------
+19. Responsive
+---------------------------------------------------------------*/
+
+@media (min-width: 0px) and (max-width: 1010px) {
+	
+	#header {
+		position: relative;
+	}
+	
+	#header {
+		width: 100%;
+		border-right: none;
+		left: 0px;
+		top: 0px;
+		padding: 0px;
+		margin: 0px;
+	}
+
